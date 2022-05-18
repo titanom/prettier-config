@@ -1,0 +1,28 @@
+{
+  "name": "@titanom/prettier-config",
+  "version": "1.0.0",
+  "description": "Prettier configuration of Titanom Technologies GmbH",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/titanom/prettier-config.git"
+  },
+  "author": "Jannis Morgenstern <jannis.n.morgenstern@gmail.com> (https://github.com/Jannis-Morgenstern)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/titanom/prettier-config/issues"
+  },
+  "homepage": "https://github.com/titanom/prettier-config#readme",
+  "type": "commonjs",
+  "scripts": {
+    "format": "prettier --write .",
+    "preinstall": "pnpm dlx only-allow pnpm"
+  },
+  "main": "index.js",
+  "devDependencies": {
+    "prettier": "^2.6.2"
+  },
+  "engines": {
+    "node": ">=16",
+    "pnpm": ">=7"
+  }
+}
