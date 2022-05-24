@@ -1,6 +1,6 @@
 # @titanom/prettier-config
 
-[Prettier](https://prettier.io/) Configuration of [Titanom Technologies GmbH](https://titanom.com/)
+Default [Prettier](https://prettier.io) config for projects at [Titanom Technologies](https://titanom.com)
 
 ## Installation
 

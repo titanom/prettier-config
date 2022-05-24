@@ -1,7 +1,7 @@
 {
   "name": "@titanom/prettier-config",
   "version": "1.0.0",
-  "description": "Prettier configuration of Titanom Technologies GmbH",
+  "description": "Default prettier config for projects at Titanom Technologies",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/titanom/prettier-config.git"
