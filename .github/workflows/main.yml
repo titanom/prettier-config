@@ -26,11 +26,3 @@ jobs:
       - name: Format arbitrary file
         run: touch stub.js && pnpm exec prettier -c stub.js
 
-      - name: Create Release Pull Request or Publish
-        id: changesets
-        uses: changesets/action@v1
-        with:
-          publish: pnpm release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
