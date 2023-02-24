@@ -27,4 +27,3 @@ jobs:
 
       - name: Format arbitrary file
         run: touch stub.js && pnpm exec prettier -c stub.js
-
