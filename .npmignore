@@ -1,0 +1,7 @@
+*
+!LICENSE
+!.npmrc
+!package.json
+!.prettierrc.js
+!README.md
+!index.js
