@@ -2,8 +2,9 @@ name: 🩺 CHECK
 
 on:
   push:
+    branches:
+      - master
   pull_request:
-    branches: [master]
   workflow_dispatch:
 
 jobs:
@@ -11,26 +12,9 @@ jobs:
     name: Check for Errors in Config
     runs-on: ubuntu-latest
     steps:
-      - name: 🕵 Checkout repo
-        uses: actions/checkout@v3
+      - uses: titanom/github-composite-actions/turbo/setup@v1.0.11
         with:
-          fetch-depth: '1'
-
-      - name: 📦 Setup pnpm
-        uses: pnpm/action-setup@v2.4.0
-        id: pnpm-install
-        with:
-          version: 7
-          run_install: false
-
-      - name: ⚙️ Setup node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 16
-          cache: 'pnpm'
-
-      - name: 📥 Install dependencies
-        run: pnpm install --frozen-lockfile
+          pnpm-version: 8
 
       - name: 📄 Format arbitrary file
         run: touch stub.js && pnpm exec prettier -c stub.js
