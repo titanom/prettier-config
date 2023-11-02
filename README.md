@@ -1,33 +1,31 @@
 # @titanom/prettier-config
 
-Default [Prettier](https://prettier.io) config for projects at [Titanom Technologies](https://titanom.com)
+[Prettier](https://prettier.io) config for projects at [Titanom Technologies](https://titanom.com)
 
 ## Installation
 
 ```sh
-# npm
-npm i -D @titanom/prettier-config
-
-# yarn
-yarn add -D @titanom/prettier-config
-
-# pnpm
 pnpm add -D @titanom/prettier-config
 ```
 
-## Usage
+## Configuration
 
+CommonJS
 ```js
 // .prettierrc.cjs
-module.exports = require('@titanom/prettier-config');
+const defineConfig = require('@titanom/prettier-config');
+
+module.exports = defineConfig({
+  // ... options
+});
 ```
 
-Or if you want to change the config:
-
+ES Modules
 ```js
-// .prettierrc.cjs
-module.exports = {
-  ...requre('@titanom/prettier-config'),
-  // your config here
-}
+// prettier.config.mjs
+import defineConfig from '@titanom/prettier-config';
+
+export default defineConfig({
+  // ... options
+});
 ```

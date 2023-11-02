@@ -30,7 +30,7 @@
     "@titanom/tsconfig": "0.2.0",
     "@types/node": "20.8.10",
     "fix-tsup-cjs": "1.2.0",
-    "prettier": "3.0.0",
+    "prettier": "3.0.3",
     "tsup": "7.2.0",
     "typescript": "5.2.2"
   },
