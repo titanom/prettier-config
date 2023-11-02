@@ -6,25 +6,25 @@ settings:
 
 devDependencies:
   '@changesets/cli':
-    specifier: ^2.26.2
+    specifier: 2.26.2
     version: 2.26.2
   '@titanom/tsconfig':
-    specifier: ^0.2.0
+    specifier: 0.2.0
     version: 0.2.0
   '@types/node':
-    specifier: ^20.8.10
+    specifier: 20.8.10
     version: 20.8.10
   fix-tsup-cjs:
-    specifier: ^1.2.0
+    specifier: 1.2.0
     version: 1.2.0
   prettier:
-    specifier: ^3.0.0
+    specifier: 3.0.0
     version: 3.0.0
   tsup:
-    specifier: ^7.2.0
+    specifier: 7.2.0
     version: 7.2.0(typescript@5.2.2)
   typescript:
-    specifier: ^5.2.2
+    specifier: 5.2.2
     version: 5.2.2
 
 packages:
