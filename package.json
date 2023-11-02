@@ -15,7 +15,8 @@
   "scripts": {
     "format": "pnpm build && prettier --write .",
     "format:check": "pnpm build && prettier --check .",
-    "build": "tsup && fix-tsup-cjs"
+    "build": "tsup && fix-tsup-cjs",
+    "release": "pnpm build && changeset publish"
   },
   "exports": {
     ".": {
