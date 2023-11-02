@@ -11,6 +11,7 @@ pnpm add -D @titanom/prettier-config
 ## Configuration
 
 CommonJS
+
 ```js
 // .prettierrc.cjs
 const defineConfig = require('@titanom/prettier-config');
@@ -21,6 +22,7 @@ module.exports = defineConfig({
 ```
 
 ES Modules
+
 ```js
 // prettier.config.mjs
 import defineConfig from '@titanom/prettier-config';
