@@ -12,13 +12,29 @@
     "url": "https://github.com/titanom/prettier-config/issues"
   },
   "homepage": "https://github.com/titanom/prettier-config#readme",
-  "type": "commonjs",
   "scripts": {
-    "format": "prettier --write ."
+    "format": "pnpm build && prettier --write .",
+    "format:check": "pnpm build && prettier --check .",
+    "build": "tsup && fix-tsup-cjs",
+    "release": "pnpm build && changeset publish"
   },
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
   "devDependencies": {
-    "prettier": "^3.0.0"
+    "@changesets/cli": "2.26.2",
+    "@titanom/tsconfig": "0.2.0",
+    "@types/node": "20.8.10",
+    "fix-tsup-cjs": "1.2.0",
+    "prettier": "3.0.3",
+    "tsup": "7.2.0",
+    "typescript": "5.2.2"
   },
   "peerDependencies": {
     "prettier": "^2.x.x || ^3.0.0"
@@ -26,5 +42,8 @@
   "engines": {
     "node": ">=16",
     "pnpm": ">=7"
+  },
+  "dependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "4.1.1"
   }
 }

@@ -17,4 +17,4 @@ jobs:
           pnpm-version: 8
 
       - name: 📄 Format arbitrary file
-        run: touch stub.js && pnpm exec prettier -c stub.js
+        run: pnpm build && touch stub.js && pnpm exec prettier -c stub.js
